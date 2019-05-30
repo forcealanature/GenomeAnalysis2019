@@ -1,0 +1,25 @@
+#### NOTE: I ended up running beast on local download, to get the version used in the paper and for easy-ness. I did generate 
+### a bash script for running it on uppmax, that woked, maybe this version dosent (i dont know) because of modifications, but 
+### I used the output from a downloaded version, see the wiki. 
+
+#!/bin/bash -l
+
+#SBATCH -A g2019003
+#SBATCH -p core
+#SBATCH -n 4
+#SBATCH -t 24:00:00
+#SBATCH -J beast_scaf6paperV_yj
+#SBATCH --mail-type=ALL
+#SBATCH --mail-user yjondelius@gmail.com
+
+#Load modules
+module load bioinfo-tools
+module load java
+module load beast
+module load beast2
+module load beagle
+
+#My commands
+cd /home/ylvjon/genomeanalysis/phylo/
+
+beast -bea-beagle_gpu -beagle_order 1 Durian_forbeast_DNA_concat.xml
