@@ -1,0 +1,11 @@
+#######Added note: Bowtie2 was run commandline, these are my notes. This "note" was modified several times during the project
+#######So for more accurate descriptions of how to index and build reads, i would recommend bowtie2´s manual. 
+########The general structure behind this is: bowtie2 pilon_output.fasta bowtie_output_index
+
+#load packages
+module load bioinfo-tools
+module load bowtie2
+
+bowtie2-build /home/ylvjon/genomeanalysis/analysis/pilon_improved_assembly_scaf6.fasta /home/ylvjon/genomeanalysis/analysis/bowtie2onpilon
+
+bowtie2index /home/ylvjon/genomeanalysis/analysis/bowtie2onpilon /home/ylvjon/genomeanalysis/analysis/bowtie2_results_onpilon_indexed
