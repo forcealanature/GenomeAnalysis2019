@@ -1,0 +1,5 @@
+######To check transriptome assembly quality i ran transrate, i just randomly found the software on uppmax and im not sure it was the correct choice, but i figured it couldnt hurt. 
+
+transrate --assembly /home/ylvjon/genomeanalysis/analysis/trinity_output/Trinity-GG.fasta
+
+##To see the output see printscreen in the wiki
