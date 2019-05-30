@@ -4,7 +4,7 @@
 #SBATCH -p core
 #SBATCH -n 2
 #SBATCH -t 5:00:00
-#SBATCH -J bwa_pbill_alignment_scaffold6
+#SBATCH -J bwa_mapping_scaf6paperv_yj
 #SBATCH --mail-type=ALL
 #SBATCH --mail-user yjondelius@gmail.com
 
