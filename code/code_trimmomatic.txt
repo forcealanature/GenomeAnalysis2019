@@ -1,0 +1,15 @@
+####Added notes: Trimmomatic was run using command line, NOT a bash script. These are my notes from that run. The "command" is the line starting with "java". 
+
+# Trimming
+
+#My paths:
+/home/ylvjon/genomeanalysis/RNAdata/RNA_scaffold61_untrimmed_rd.fastq.gz
+/home/ylvjon/genomeanalysis/RNAdata/RNA_scaffold62_untrimmed_rd.fastq.gz
+
+java -jar /sw/apps/bioinfo/trimmomatic/0.36/rackham/trimmomatic-0.36.jar PE /home/ylvjon/genomeanalysis/RNAdata/RNA_scaffold61_untrimmed_rd.fastq.gz /home/ylvjon/genomeanalysis/RNAdata/RNA_scaffold62_untrimmed_rd.fastq.gz /home/ylvjon/genomeanalysis/analysis/trimmomatic_results/forward_paired.fq.gz /home/ylvjon/genomeanalysis/analysis/trimmomatic_results/forward_unpaired.fq.gz /home/ylvjon/genomeanalysis/analysis/trimmomatic_results/reverse_paired.fq.gz /home/ylvjon/genomeanalysis/analysis/trimmomatic_results/reverse_unpaired.fq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:4:15 MINLEN:36
+
+#My output
+Quality encoding detected as phred33
+Quality encoding detected as phred33
+Input Read Pairs: 2768706 Both Surviving: 2767657 (99,96%) Forward Only Surviving: 171 (0,01%) Reverse Only Surviving: 864 (0,03%) Dropped: 14 (0,00%)
+TrimmomaticPE: Completed successfully
