@@ -1,1 +1,2 @@
-ddd
+This folder contains print screens of the emails i recieved from rackham for my sbatch runs. 
+A few are missing, I couldnt find those emails in my email (I have deleted a loooot of failed run ones so I might by accident have deleted a working one too). If I had known you wanted the slumr-logs, I would have synced them down from UPPMAX but now I didnt and completely swiped my account a few times becomes of memory issues primarily when trying to run trinity. So this is the best I could do, If there is anyway for you to recreate slumr-things on uppmax and you really want this, please tell me and I will try. 
