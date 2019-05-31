@@ -1,0 +1,14 @@
+#####Please disregard this file as it was uploaded after deadline, its only for my own future benefit!############ 
+
+###UPPMAX special commands 
+
+# Setting up softlinks
+ln -s /path/to/data/ name_you_want_your_softlink_to-have #NOTE: If you are in the place you want the softlink, otherwise i assume you need a path. 
+
+#
+
+
+###Bash commands
+
+grep -iRL ”text” ./      (or add directory 
+
