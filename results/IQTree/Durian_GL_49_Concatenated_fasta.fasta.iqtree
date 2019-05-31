@@ -1,0 +1,308 @@
+IQ-TREE 1.6.9 built Dec 21 2018
+
+Partition file name: partitionfile_for_concat_OFF.nex
+Input file name: Durian_GL_49_Concatenated_fasta.fasta
+Type of analysis: ModelFinder + tree reconstruction + ultrafast bootstrap (1000 replicates)
+Random seed number: 730366
+
+REFERENCES
+----------
+
+To cite ModelFinder please use: 
+
+Subha Kalyaanamoorthy, Bui Quang Minh, Thomas KF Wong, Arndt von Haeseler,
+and Lars S Jermiin (2017) ModelFinder: Fast model selection for
+accurate phylogenetic estimates. Nature Methods, 14:587–589.
+https://doi.org/10.1038/nmeth.4285
+
+To cite IQ-TREE please use:
+
+Lam-Tung Nguyen, Heiko A. Schmidt, Arndt von Haeseler, and Bui Quang Minh
+(2015) IQ-TREE: A fast and effective stochastic algorithm for estimating
+maximum likelihood phylogenies. Mol Biol Evol, 32:268-274.
+https://doi.org/10.1093/molbev/msu300
+
+Since you used ultrafast bootstrap (UFBoot) please also cite: 
+
+Diep Thi Hoang, Olga Chernomor, Arndt von Haeseler, Bui Quang Minh,
+and Le Sy Vinh (2017) UFBoot2: Improving the ultrafast bootstrap
+approximation. Mol Biol Evol, in press.
+https://doi.org/10.1093/molbev/msx281
+
+Since you used partition models please also cite:
+
+Olga Chernomor, Arndt von Haeseler, and Bui Quang Minh (2016)
+Terrace aware data structure for phylogenomic inference from
+supermatrices. Syst Biol, 65:997-1008.
+https://doi.org/10.1093/sysbio/syw037
+
+SEQUENCE ALIGNMENT
+------------------
+
+Input data: 11 taxa with 49 partitions and 30975 total sites (0% missing data)
+
+  ID  Name    Type	Seq	Site	Unique	Infor	Invar	Const
+   1  part1   DNA	11	489	282	201	161	161
+   2  part2   DNA	11	1744	693	585	841	841
+   3  part3   DNA	11	439	261	185	128	128
+   4  part4   DNA	11	592	271	204	291	291
+   5  part5   DNA	11	867	575	476	189	189
+   6  part6   DNA	11	348	186	140	161	161
+   7  part7   DNA	11	508	288	199	165	165
+   8  part8   DNA	11	442	275	196	135	135
+   9  part9   DNA	11	463	248	172	159	159
+  10  part10  DNA	11	646	306	227	289	289
+  11  part11  DNA	11	904	401	316	419	419
+  12  part12  DNA	11	1072	529	418	376	376
+  13  part13  DNA	11	403	281	227	107	107
+  14  part14  DNA	11	931	437	340	375	375
+  15  part15  DNA	11	148	87	48	38	38
+  16  part16  DNA	11	757	345	295	316	316
+  17  part17  DNA	11	385	216	166	147	147
+  18  part18  DNA	11	181	119	79	57	56
+  19  part19  DNA	11	379	191	141	169	169
+  20  part20  DNA	11	1102	503	414	497	497
+  21  part21  DNA	11	751	355	289	350	350
+  22  part22  DNA	11	1351	585	464	618	618
+  23  part23  DNA	11	1096	587	518	377	377
+  24  part24  DNA	11	265	165	112	84	84
+  25  part25  DNA	11	376	188	127	167	167
+  26  part26  DNA	11	1354	693	570	424	423
+  27  part27  DNA	11	217	113	82	98	98
+  28  part28  DNA	11	862	423	330	365	365
+  29  part29  DNA	11	607	313	212	233	233
+  30  part30  DNA	11	390	205	151	170	170
+  31  part31  DNA	11	421	245	151	137	137
+  32  part32  DNA	11	1084	433	321	516	516
+  33  part33  DNA	11	693	409	305	215	215
+  34  part34  DNA	11	523	349	256	112	112
+  35  part35  DNA	11	505	281	216	194	194
+  36  part36  DNA	11	862	402	327	387	387
+  37  part37  DNA	11	556	356	275	159	159
+  38  part38  DNA	11	613	293	205	291	291
+  39  part39  DNA	11	204	101	62	84	84
+  40  part40  DNA	11	1267	696	594	383	383
+  41  part41  DNA	11	69	59	35	6	6
+  42  part42  DNA	11	184	105	66	50	50
+  43  part43  DNA	11	826	370	285	386	386
+  44  part44  DNA	11	619	344	274	227	227
+  45  part45  DNA	11	373	248	201	113	112
+  46  part46  DNA	11	831	469	360	290	290
+  47  part47  DNA	11	568	310	236	206	206
+  48  part48  DNA	11	319	235	177	77	77
+  49  part49  DNA	11	389	253	195	105	105
+
+Column meanings:
+  Unique: Number of unique site patterns
+  Infor:  Number of parsimony-informative sites
+  Invar:  Number of invariant sites
+  Const:  Number of constant sites (can be subset of invariant sites)
+
+ModelFinder
+-----------
+
+Best-fit model according to BIC: K2P+G4:part1,TIM2+F+I+G4:part2,TIM2e+G4:part3,TPM2u+F+G4:part4,TPM3u+F+G4:part5,TNe+I+G4:part6,TPM2u+F+G4:part7,HKY+F+R2:part8,TIM2e+G4:part9,K2P+I+G4:part10,TIM2e+I+G4:part11,TPM2u+F+G4:part12,TIM3e+I+G4:part13,TIM2e+R2:part14,K2P+G4:part15,K2P+G4:part16,TIM2e+I+G4:part17,TIM2e+I:part18,K2P+G4:part19,TIM2e+I+G4:part20,TIM3+F+I+G4:part21,TIM2e+I+G4:part22,TIM3e+I+G4:part23,K2P+R2:part24,TIM2+F+G4:part25,TPM2u+F+G4:part26,K2P+I:part27,TIM2e+I+G4:part28,TIM2e+G4:part29,K2P+I+G4:part30,K2P+G4:part31,TPM2u+F+G4:part32,TIM2+F+G4:part33,K2P+R2:part34,K2P+I+G4:part35,K2P+I+G4:part36,TPM2u+F+R2:part37,TVMe+I+G4:part38,K2P+G4:part39,TPM3u+F+I+G4:part40,K2P+G4:part41,K2P+G4:part42,K2P+G4:part43,TPM2+F+R2:part44,TPM2u+F+I+G4:part45,TN+F+I+G4:part46,TN+F+G4:part47,K2P+R2:part48,TIM2e+R2:part49
+
+List of best-fit models per partition:
+
+  ID  Model             LogL          AIC      w-AIC      AICc     w-AICc       BIC      w-BIC
+   1  K2P+G4           -3710.9353   7427.8707 - 0.0000   7427.9201 - 0.0000   7440.4478 - 0.0000
+   2  TIM2+F+I+G4     -10874.2316  21766.4632 - 0.0000  21766.5670 - 0.0000  21815.6386 - 0.0000
+   3  TIM2e+G4         -3419.7730   6849.5459 - 0.0000   6849.6845 - 0.0000   6869.9684 - 0.0000
+   4  TPM2u+F+G4       -3707.8453   7429.6905 - 0.0000   7429.8823 - 0.0000   7460.3750 - 0.0000
+   5  TPM3u+F+G4       -7534.3519  15082.7038 - 0.0000  15082.8342 - 0.0000  15116.0591 - 0.0000
+   6  TNe+I+G4         -2410.4259   4830.8519 - 0.0000   4831.0273 - 0.0000   4850.1129 - 0.0000
+   7  TPM2u+F+G4       -3665.6917   7345.3833 - 0.0000   7345.6073 - 0.0000   7374.9967 - 0.0000
+   8  HKY+F+R2         -3378.2212   6770.4424 - 0.0000   6770.7004 - 0.0000   6799.0815 - 0.0000
+   9  TIM2e+G4         -3224.2817   6458.5635 - 0.0000   6458.6948 - 0.0000   6479.2521 - 0.0000
+  10  K2P+I+G4         -4269.9684   8547.9369 - 0.0000   8547.9993 - 0.0000   8565.8201 - 0.0000
+  11  TIM2e+I+G4       -5722.6323  11457.2646 - 0.0000  11457.3582 - 0.0000  11486.1056 - 0.0000
+  12  TPM2u+F+G4       -7592.9224  15199.8447 - 0.0000  15199.9500 - 0.0000  15234.6857 - 0.0000
+  13  TIM3e+I+G4       -3617.5438   7247.0877 - 0.0000   7247.2998 - 0.0000   7271.0813 - 0.0000
+  14  TIM2e+R2         -6341.9527  12695.9055 - 0.0000  12695.9964 - 0.0000  12724.9230 - 0.0000
+  15  K2P+G4           -1038.0467   2082.0933 - 0.0000   2082.2600 - 0.0000   2091.0850 - 0.0000
+  16  K2P+G4           -5046.2086  10098.4172 - 0.0000  10098.4490 - 0.0000  10112.3053 - 0.0000
+  17  TIM2e+I+G4       -2826.9358   5665.8717 - 0.0000   5666.0939 - 0.0000   5689.5911 - 0.0000
+  18  TIM2e+I          -1375.9914   2761.9828 - 0.0000   2762.3257 - 0.0000   2777.9753 - 0.0000
+  19  K2P+G4           -2547.4612   5100.9223 - 0.0000   5100.9863 - 0.0000   5112.7349 - 0.0000
+  20  TIM2e+I+G4       -7280.3219  14572.6437 - 0.0000  14572.7204 - 0.0000  14602.6730 - 0.0000
+  21  TIM3+F+I+G4      -4889.0716   9796.1431 - 0.0000   9796.3860 - 0.0000   9837.7358 - 0.0000
+  22  TIM2e+I+G4       -8849.9731  17711.9462 - 0.0000  17712.0087 - 0.0000  17743.1978 - 0.0000
+  23  TIM3e+I+G4       -8517.1799  17046.3597 - 0.0000  17046.4369 - 0.0000  17076.3563 - 0.0000
+  24  K2P+R2           -2019.6751   4047.3502 - 0.0000   4047.5041 - 0.0000   4061.6692 - 0.0000
+  25  TIM2+F+G4        -2373.7762   4763.5524 - 0.0000   4763.9447 - 0.0000   4794.9891 - 0.0000
+  26  TPM2u+F+G4      -10053.0916  20120.1832 - 0.0000  20120.2664 - 0.0000  20156.6589 - 0.0000
+  27  K2P+I            -1380.6903   2767.3805 - 0.0000   2767.4932 - 0.0000   2777.5202 - 0.0000
+  28  TIM2e+I+G4       -5937.4667  11886.9334 - 0.0000  11887.0317 - 0.0000  11915.4890 - 0.0000
+  29  TIM2e+G4         -4043.5628   8097.1255 - 0.0000   8097.2254 - 0.0000   8119.1682 - 0.0000
+  30  K2P+I+G4         -2810.6074   5629.2149 - 0.0000   5629.3188 - 0.0000   5645.0795 - 0.0000
+  31  K2P+G4           -3063.4703   6132.9405 - 0.0000   6132.9981 - 0.0000   6145.0684 - 0.0000
+  32  TPM2u+F+G4       -6532.2694  13078.5388 - 0.0000  13078.6429 - 0.0000  13113.4577 - 0.0000
+  33  TIM2+F+G4        -5242.0114  10500.0227 - 0.0000  10500.2332 - 0.0000  10536.3510 - 0.0000
+  34  K2P+R2           -4494.7955   8997.5909 - 0.0000   8997.6681 - 0.0000   9014.6292 - 0.0000
+  35  K2P+I+G4         -3692.6477   7393.2953 - 0.0000   7393.3753 - 0.0000   7410.1935 - 0.0000
+  36  K2P+I+G4         -5714.0303  11436.0606 - 0.0000  11436.1073 - 0.0000  11455.0976 - 0.0000
+  37  TPM2u+F+R2       -4367.9724   8751.9448 - 0.0000   8752.2081 - 0.0000   8786.5110 - 0.0000
+  38  TVMe+I+G4        -3835.2536   7684.5071 - 0.0000   7684.6923 - 0.0000   7715.4357 - 0.0000
+  39  K2P+G4           -1328.4084   2662.8168 - 0.0000   2662.9368 - 0.0000   2672.7712 - 0.0000
+  40  TPM3u+F+I+G4    -10042.8588  20101.7176 - 0.0000  20101.8321 - 0.0000  20142.8729 - 0.0000
+  41  K2P+G4            -621.3001   1248.6002 - 0.0000   1248.9694 - 0.0000   1255.3025 - 0.0000
+  42  K2P+G4           -1358.7203   2723.4406 - 0.0000   2723.5739 - 0.0000   2733.0854 - 0.0000
+  43  K2P+G4           -5352.9752  10711.9503 - 0.0000  10711.9795 - 0.0000  10726.1001 - 0.0000
+  44  TPM2+F+R2        -4598.7230   9213.4461 - 0.0000   9213.6821 - 0.0000   9248.8709 - 0.0000
+  45  TPM2u+F+I+G4     -3067.4747   6150.9494 - 0.0000   6151.3451 - 0.0000   6182.3221 - 0.0000
+  46  TN+F+I+G4        -6428.4561  12872.9122 - 0.0000  12873.0874 - 0.0000  12910.6933 - 0.0000
+  47  TN+F+G4          -4103.5740   8221.1479 - 0.0000   8221.3479 - 0.0000   8251.5428 - 0.0000
+  48  K2P+R2           -2930.3983   5868.7965 - 0.0000   5868.9239 - 0.0000   5883.8573 - 0.0000
+  49  TIM2e+R2         -3224.1011   6460.2022 - 0.0000   6460.4220 - 0.0000   6483.9836 - 0.0000
+
+AIC, w-AIC   : Akaike information criterion scores and weights.
+AICc, w-AICc : Corrected AIC scores and weights.
+BIC, w-BIC   : Bayesian information criterion scores and weights.
+
+Plus signs denote the 95% confidence sets.
+Minus signs denote significant exclusion.
+
+SUBSTITUTION PROCESS
+--------------------
+
+Edge-linked-proportional partition model but separate models between partitions
+
+  ID  Model           Speed  Parameters
+   1  K2P+G4         1.0344  K2P{2.5352}+FQ+G4{0.744893}
+   2  TIM2+F+I+G4    0.7973  TIM2{1.62888,3.61255,5.0378}+F{0.284091,0.21445,0.245204,0.256255}+I{0.362355}+G4{1.51481}
+   3  TIM2e+G4       1.1830  TIM2e{2.87909,5.56759,5.42652}+FQ+G4{0.809094}
+   4  TPM2u+F+G4     0.7855  TPM2u{1.7804,4.7152}+F{0.246929,0.217752,0.234029,0.30129}+G4{0.394477}
+   5  TPM3u+F+G4     1.4379  TPM3u{1.41518,3.6106}+F{0.304813,0.196812,0.222921,0.275453}+G4{1.06859}
+   6  TNe+I+G4       1.2515  TNe{3.18478,5.45321}+FQ+I{0.411456}+G4{1.75842}
+   7  TPM2u+F+G4     0.8943  TPM2u{1.79828,3.58312}+F{0.259664,0.212598,0.217967,0.309771}+G4{0.991537}
+   8  HKY+F+R2       1.0990  HKY{3.59624}+F{0.308309,0.177293,0.238791,0.275607}+R2{0.432007,0.143924,0.567993,1.65112}
+   9  TIM2e+G4       0.8705  TIM2e{1.96164,5.52523,3.94111}+FQ+G4{0.861034}
+  10  K2P+I+G4       0.8896  K2P{3.3997}+FQ+I{0.340999}+G4{1.63655}
+  11  TIM2e+I+G4     0.8016  TIM2e{2.00452,4.81511,5.66401}+FQ+I{0.354737}+G4{1.7904}
+  12  TPM2u+F+G4     0.9264  TPM2u{1.98429,5.0969}+F{0.298847,0.197252,0.218199,0.285702}+G4{0.754081}
+  13  TIM3e+I+G4     1.6092  TIM3e{1.99835,3.28353,5.19511}+FQ+I{0.185809}+G4{1.72152}
+  14  TIM2e+R2       0.8226  TIM2e{1.92623,4.26372,4.29675}+FQ+R2{0.531448,0.157333,0.468552,1.95578}
+  15  K2P+G4         0.8335  K2P{2.49305}+FQ+G4{1.53193}
+  16  K2P+G4         0.8968  K2P{3.23842}+FQ+G4{0.533931}
+  17  TIM2e+I+G4     1.0912  TIM2e{1.6578,3.27054,5.06091}+FQ+I{0.308401}+G4{2.25016}
+  18  TIM2e+I        0.9208  TIM2e{2.41721,3.69277,4.08346}+FQ+I{0.268198}
+  19  K2P+G4         1.0264  K2P{3.67648}+FQ+G4{0.409921}
+  20  TIM2e+I+G4     0.8429  TIM2e{1.75944,4.17204,4.9074}+FQ+I{0.369487}+G4{2.3614}
+  21  TIM3+F+I+G4    0.9839  TIM3{2.71263,5.24111,9.47876}+F{0.296332,0.178187,0.260138,0.265343}+I{0.359672}+G4{1.4191}
+  22  TIM2e+I+G4     0.8903  TIM2e{1.80621,4.5758,5.50497}+FQ+I{0.309763}+G4{1.18251}
+  23  TIM3e+I+G4     1.2950  TIM3e{1.54637,3.19234,4.10982}+FQ+I{0.272513}+G4{2.01408}
+  24  K2P+R2         1.0479  K2P{2.29978}+FQ+R2{0.466102,0.162278,0.533898,1.73135}
+  25  TIM2+F+G4      0.7596  TIM2{2.47707,4.15956,7.07414}+F{0.290377,0.164894,0.253627,0.291103}+G4{0.564457}
+  26  TPM2u+F+G4     0.9856  TPM2u{1.42582,3.68033}+F{0.275413,0.205452,0.238284,0.280851}+G4{0.892593}
+  27  K2P+I          0.7482  K2P{4.31008}+FQ+I{0.416842}
+  28  TIM2e+I+G4     0.9519  TIM2e{1.6928,3.6514,4.40413}+FQ+I{0.324151}+G4{1.81702}
+  29  TIM2e+G4       0.8111  TIM2e{2.01504,4.78333,4.26762}+FQ+G4{0.712973}
+  30  K2P+I+G4       0.9667  K2P{3.20632}+FQ+I{0.320399}+G4{1.39817}
+  31  K2P+G4         0.8745  K2P{2.8293}+FQ+G4{0.908501}
+  32  TPM2u+F+G4     0.7522  TPM2u{2.31288,6.48881}+F{0.30426,0.187186,0.234988,0.273566}+G4{0.447513}
+  33  TIM2+F+G4      1.0871  TIM2{1.49346,3.96459,5.27323}+F{0.293716,0.172242,0.257379,0.276663}+G4{0.836527}
+  34  K2P+R2         1.3656  K2P{2.20658}+FQ+R2{0.49595,0.265701,0.50405,1.7225}
+  35  K2P+I+G4       1.1375  K2P{3.91022}+FQ+I{0.290074}+G4{1.62931}
+  36  K2P+I+G4       0.8715  K2P{2.89075}+FQ+I{0.358587}+G4{1.96367}
+  37  TPM2u+F+R2     1.1553  TPM2u{1.58061,4.48105}+F{0.26259,0.193754,0.230379,0.313277}+R2{0.366036,0.110312,0.633964,1.51368}
+  38  TVMe+I+G4      0.7039  TVMe{2.76527,7.59916,4.86399,1.87912}+FQ+I{0.402738}+G4{4.10029}
+  39  K2P+G4         0.7099  K2P{2.36245}+FQ+G4{0.705431}
+  40  TPM3u+F+I+G4   1.2172  TPM3u{1.46109,3.70944}+F{0.267346,0.207577,0.228457,0.296621}+I{0.157557}+G4{1.37273}
+  41  K2P+G4         1.3463  K2P{1.87363}+FQ+G4{3.2936}
+  42  K2P+G4         0.9850  K2P{2.37422}+FQ+G4{1.02261}
+  43  K2P+G4         0.9206  K2P{3.81448}+FQ+G4{0.388685}
+  44  TPM2+F+R2      1.0959  TPM2{1.96316,5.47052}+F{0.270965,0.224556,0.193567,0.310912}+R2{0.515204,0.137546,0.484796,1.91655}
+  45  TPM2u+F+I+G4   1.4873  TPM2u{2.18632,5.49438}+F{0.211796,0.254448,0.208384,0.325372}+I{0.240943}+G4{2.14401}
+  46  TN+F+I+G4      1.1977  TN{3.30662,2.01089}+F{0.197243,0.237501,0.228859,0.336396}+I{0.226467}+G4{1.4161}
+  47  TN+F+G4        1.0519  TN{2.85424,4.19482}+F{0.303297,0.172215,0.244078,0.28041}+G4{0.606588}
+  48  K2P+R2         1.3906  K2P{2.20596}+FQ+R2{0.393702,0.149444,0.606298,1.55231}
+  49  TIM2e+R2       1.2918  TIM2e{1.82747,3.90185,4.55913}+FQ+R2{0.437835,0.163261,0.562165,1.65168}
+
+MAXIMUM LIKELIHOOD TREE
+-----------------------
+
+Log-likelihood of the tree: -220281.9274 (s.e. 808.7147)
+Unconstrained log-likelihood (without tree): -147040.7884
+Number of free parameters (#branches + #model parameters): 292
+Akaike information criterion (AIC) score: 441147.8548
+Corrected Akaike information criterion (AICc) score: 441153.4318
+Bayesian information criterion (BIC) score: 443583.4080
+
+Total tree length (sum of branch lengths): 2.4778
+Sum of internal branch lengths: 0.3244 (13.0941% of tree length)
+
+NOTE: Tree is UNROOTED although outgroup taxon 'ath' is drawn at root
+Numbers in parentheses are SH-aLRT support (%) / ultrafast bootstrap support (%)
+
++--------------------------ath
+|
+|                   +--coA
+|             +-----| (100/100)
+|             |     +--coR
+|          +--| (100/100)
+|          |  +--xxx
+|  +-------| (100/100)
+|  |       +--tcc
++--| (100/100)
+|  |           +-------------------------------------------------osa
+|  |        +--| (96.5/88)
+|  |        |  +------------------cof
+|  |     +--| (100/100)
+|  |     |  +---------gra
+|  |  +--| (100/100)
+|  |  |  +-------------------soy
+|  +--| (100/100)
+|     +------------pop
+|
++------------pap
+
+Tree in newick format:
+
+(ath:0.3610704817,((((coA:0.0115492042,coR:0.0115685460)100/100:0.0799346545,xxx:0.0415011473)100/100:0.0119433237,tcc:0.0422892774)100/100:0.1084550040,((((osa:0.6671875429,cof:0.2524048917)96.5/88:0.0311262881,gra:0.1364855909)100/100:0.0270952238,soy:0.2685005399)100/100:0.0183368221,pop:0.1808346765)100/100:0.0176472613)100/100:0.0299099780,pap:0.1799854945);
+
+CONSENSUS TREE
+--------------
+
+Consensus tree is constructed from 1000bootstrap trees
+Log-likelihood of consensus tree: -220281.927521
+Robinson-Foulds distance between ML tree and consensus tree: 0
+
+Branches with support >0.000000% are kept (extended consensus)
+Branch lengths are optimized by maximum likelihood on original alignment
+Numbers in parentheses are bootstrap supports (%)
+
++--------------------------ath
+|
+|                   +--coA
+|             +-----| (100)
+|             |     +--coR
+|          +--| (100)
+|          |  +--xxx
+|  +-------| (100)
+|  |       +--tcc
++--| (100)
+|  |           +-------------------------------------------------osa
+|  |        +--| (88)
+|  |        |  +------------------cof
+|  |     +--| (100)
+|  |     |  +---------gra
+|  |  +--| (100)
+|  |  |  +-------------------soy
+|  +--| (100)
+|     +------------pop
+|
++------------pap
+
+
+Consensus tree in newick format: 
+
+(ath:0.3610513937,((((coA:0.0115493199,coR:0.0115683489)100:0.0799323892,xxx:0.0415000575)100:0.0119426643,tcc:0.0422882381)100:0.1084515074,((((osa:0.6671038969,cof:0.2523146894)88:0.0311642559,gra:0.1364797948)100:0.0270947248,soy:0.2684888403)100:0.0183370134,pop:0.1808271682)100:0.0176461936)100:0.0299173128,pap:0.1799744962);
+
+TIME STAMP
+----------
+
+Date and time: Sat May 25 18:11:56 2019
+Total CPU time used: 563.595 seconds (0h:9m:23s)
+Total wall-clock time used: 567.0299969 seconds (0h:9m:27s)
+

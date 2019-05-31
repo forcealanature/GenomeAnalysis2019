@@ -1,0 +1,275 @@
+IQ-TREE multicore version 1.6.9 for Linux 64-bit built Dec 21 2018
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    stahl (SSE3, 15 GB RAM)
+Command: ../../iqtree -s Durian_GL_49_Concatenated_fasta.fasta -spp partitionfile_for_concat_OFF.nex -pre Durian_GL_49_Concatenated_fasta.fasta -m TESTNEW -bb 1000 -alrt 1000
+Seed:    730366 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Sat May 25 17:59:18 2019
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading partition model file partitionfile_for_concat_OFF.nex ...
+Reading alignment file Durian_GL_49_Concatenated_fasta.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 11 sequences with 30975 columns, 9111 distinct patterns
+12425 parsimony-informative, 6706 singleton sites, 11844 constant sites
+     Gap/Ambiguity  Composition  p-value
+   1  ath    0.00%    failed      2.40%
+   2  coA    0.00%    failed      0.02%
+   3  coR    0.00%    failed      0.09%
+   4  osa    0.00%    failed      0.00%
+   5  tcc    0.00%    failed      3.25%
+   6  xxx    0.00%    failed      0.02%
+   7  gra    0.00%    passed     65.92%
+   8  pap    0.00%    passed      6.33%
+   9  pop    0.00%    failed      0.01%
+  10  soy    0.00%    passed     42.34%
+  11  cof    0.00%    failed      1.28%
+****  TOTAL    0.00%  8 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: No CharPartition defined, use all CharSets
+
+Loading 49 partitions...
+Subset	Type	Seqs	Sites	Infor	Invar	Model	Name
+1		11	489	201	161	TESTNEW	part1
+2		11	1744	585	841	TESTNEW	part2
+3		11	439	185	128	TESTNEW	part3
+4		11	592	204	291	TESTNEW	part4
+5		11	867	476	189	TESTNEW	part5
+6		11	348	140	161	TESTNEW	part6
+7		11	508	199	165	TESTNEW	part7
+8		11	442	196	135	TESTNEW	part8
+9		11	463	172	159	TESTNEW	part9
+10		11	646	227	289	TESTNEW	part10
+11		11	904	316	419	TESTNEW	part11
+12		11	1072	418	376	TESTNEW	part12
+13		11	403	227	107	TESTNEW	part13
+14		11	931	340	375	TESTNEW	part14
+15		11	148	48	38	TESTNEW	part15
+16		11	757	295	316	TESTNEW	part16
+17		11	385	166	147	TESTNEW	part17
+18		11	181	79	57	TESTNEW	part18
+19		11	379	141	169	TESTNEW	part19
+20		11	1102	414	497	TESTNEW	part20
+21		11	751	289	350	TESTNEW	part21
+22		11	1351	464	618	TESTNEW	part22
+23		11	1096	518	377	TESTNEW	part23
+24		11	265	112	84	TESTNEW	part24
+25		11	376	127	167	TESTNEW	part25
+26		11	1354	570	424	TESTNEW	part26
+27		11	217	82	98	TESTNEW	part27
+28		11	862	330	365	TESTNEW	part28
+29		11	607	212	233	TESTNEW	part29
+30		11	390	151	170	TESTNEW	part30
+31		11	421	151	137	TESTNEW	part31
+32		11	1084	321	516	TESTNEW	part32
+33		11	693	305	215	TESTNEW	part33
+34		11	523	256	112	TESTNEW	part34
+35		11	505	216	194	TESTNEW	part35
+36		11	862	327	387	TESTNEW	part36
+37		11	556	275	159	TESTNEW	part37
+38		11	613	205	291	TESTNEW	part38
+39		11	204	62	84	TESTNEW	part39
+40		11	1267	594	383	TESTNEW	part40
+41		11	69	35	6	TESTNEW	part41
+42		11	184	66	50	TESTNEW	part42
+43		11	826	285	386	TESTNEW	part43
+44		11	619	274	227	TESTNEW	part44
+45		11	373	201	113	TESTNEW	part45
+46		11	831	360	290	TESTNEW	part46
+47		11	568	236	206	TESTNEW	part47
+48		11	319	177	77	TESTNEW	part48
+49		11	389	195	105	TESTNEW	part49
+Degree of missing data: 0.000
+Info: multi-threading strategy over partitions
+
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.026 seconds
+NOTE: ModelFinder requires 120 MB RAM!
+Testing GTR+F+G on supermatrix...
+GTR+F+G4 / LnL: -221407.134 / df: 28 / AIC: 442870.268 / AICc: 442870.321 / BIC: 443103.815
+Selecting individual models for 49 charsets using BIC...
+ No. Model        Score       Charset
+   1 K2P+G4       7440.448    part1
+   2 TIM2+F+I+G4  21815.639   part2
+   3 TIM2e+G4     6869.968    part3
+   4 TPM2u+F+G4   7460.375    part4
+   5 TPM3u+F+G4   15116.059   part5
+   6 TNe+I+G4     4850.113    part6
+   7 TPM2u+F+G4   7374.997    part7
+   8 HKY+F+R2     6799.082    part8
+   9 TIM2e+G4     6479.252    part9
+  10 K2P+I+G4     8565.820    part10	0h:0m:46s (0h:3m:0s left)
+  11 TIM2e+I+G4   11486.106   part11	0h:0m:50s (0h:2m:54s left)
+  12 TPM2u+F+G4   15234.686   part12	0h:0m:55s (0h:2m:49s left)
+  13 TIM3e+I+G4   7271.081    part13	0h:0m:59s (0h:2m:43s left)
+  14 TIM2e+R2     12724.923   part14	0h:1m:2s (0h:2m:37s left)
+  15 K2P+G4       2091.085    part15	0h:1m:4s (0h:2m:25s left)
+  16 K2P+G4       10112.305   part16	0h:1m:9s (0h:2m:23s left)
+  17 TIM2e+I+G4   5689.591    part17	0h:1m:11s (0h:2m:15s left)
+  18 TIM2e+I      2777.975    part18	0h:1m:13s (0h:2m:5s left)
+  19 K2P+G4       5112.735    part19	0h:1m:15s (0h:1m:58s left)
+  20 TIM2e+I+G4   14602.673   part20	0h:1m:20s (0h:1m:56s left)
+  21 TIM3+F+I+G4  9837.736    part21	0h:1m:24s (0h:1m:53s left)
+  22 TIM2e+I+G4   17743.198   part22	0h:1m:32s (0h:1m:53s left)
+  23 TIM3e+I+G4   17076.356   part23	0h:1m:43s (0h:1m:56s left)
+  24 K2P+R2       4061.669    part24	0h:1m:44s (0h:1m:48s left)
+  25 TIM2+F+G4    4794.989    part25	0h:1m:46s (0h:1m:42s left)
+  26 TPM2u+F+G4   20156.659   part26	0h:1m:52s (0h:1m:39s left)
+  27 K2P+I        2777.520    part27	0h:1m:54s (0h:1m:32s left)
+  28 TIM2e+I+G4   11915.489   part28	0h:1m:58s (0h:1m:29s left)
+  29 TIM2e+G4     8119.168    part29	0h:2m:1s (0h:1m:23s left)
+  30 K2P+I+G4     5645.079    part30	0h:2m:4s (0h:1m:18s left)
+  31 K2P+G4       6145.068    part31	0h:2m:6s (0h:1m:13s left)
+  32 TPM2u+F+G4   13113.458   part32	0h:2m:13s (0h:1m:11s left)
+  33 TIM2+F+G4    10536.351   part33	0h:2m:17s (0h:1m:6s left)
+  34 K2P+R2       9014.629    part34	0h:2m:20s (0h:1m:1s left)
+  35 K2P+I+G4     7410.194    part35	0h:2m:25s (0h:0m:58s left)
+  36 K2P+I+G4     11455.098   part36	0h:2m:29s (0h:0m:53s left)
+  37 TPM2u+F+R2   8786.511    part37	0h:2m:32s (0h:0m:49s left)
+  38 TVMe+I+G4    7715.436    part38	0h:2m:35s (0h:0m:45s left)
+  39 K2P+G4       2672.771    part39	0h:2m:36s (0h:0m:40s left)
+  40 TPM3u+F+I+G4 20142.873   part40	0h:2m:45s (0h:0m:37s left)
+  41 K2P+G4       1255.302    part41	0h:2m:45s (0h:0m:32s left)
+  42 K2P+G4       2733.085    part42	0h:2m:46s (0h:0m:27s left)
+  43 K2P+G4       10726.100   part43	0h:2m:51s (0h:0m:23s left)
+  44 TPM2+F+R2    9248.871    part44	0h:2m:54s (0h:0m:19s left)
+  45 TPM2u+F+I+G4 6182.322    part45	0h:2m:57s (0h:0m:15s left)
+  46 TN+F+I+G4    12910.693   part46	0h:3m:1s (0h:0m:11s left)
+  47 TN+F+G4      8251.543    part47	0h:3m:4s (0h:0m:7s left)
+  48 K2P+R2       5883.857    part48	0h:3m:7s (0h:0m:3s left)
+  49 TIM2e+R2     6483.984    part49	0h:3m:9s (0h:0m:0s left)
+Full partition model BIC score: 443940.109 (LnL: -220460.278  df:292)
+Partition information was printed to Durian_GL_49_Concatenated_fasta.fasta.best_scheme.nex
+Partition information in Raxml format was printed to Durian_GL_49_Concatenated_fasta.fasta.best_scheme
+
+WARNING: Partition model has worse fit than single model!
+WARNING: Add MERGE to -m option to increase model fit!
+
+All model information printed to Durian_GL_49_Concatenated_fasta.fasta.model.gz
+CPU time for ModelFinder: 189.364 seconds (0h:3m:9s)
+Wall-clock time for ModelFinder: 190.150 seconds (0h:3m:10s)
+Generating 1000 samples for ultrafast bootstrap (seed: 730366)...
+
+NOTE: 83 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -226100.916
+Current log-likelihood at step 1: -220972.588
+Current log-likelihood at step 2: -220565.379
+Current log-likelihood at step 3: -220504.019
+Current log-likelihood at step 4: -220497.486
+Current log-likelihood at step 5: -220491.813
+Current log-likelihood at step 6: -220486.334
+Current log-likelihood at step 7: -220481.155
+Current log-likelihood at step 8: -220476.529
+Current log-likelihood at step 9: -220472.609
+Current log-likelihood at step 10: -220469.373
+Current log-likelihood at step 11: -220466.799
+Current log-likelihood at step 12: -220464.767
+Current log-likelihood at step 13: -220463.104
+Current log-likelihood at step 14: -220461.741
+Current log-likelihood at step 15: -220460.603
+Current log-likelihood at step 16: -220459.714
+Current log-likelihood at step 17: -220459.065
+Current log-likelihood at step 18: -220458.646
+Current log-likelihood at step 19: -220458.358
+Current log-likelihood at step 20: -220458.145
+Current log-likelihood at step 21: -220458.002
+Current log-likelihood at step 22: -220457.894
+Current log-likelihood at step 23: -220457.815
+Partition-specific rates:  1.036 0.794 1.180 0.778 1.454 1.273 0.891 1.099 0.872 0.894 0.797 0.929 1.610 0.820 0.850 0.887 1.098 0.940 1.015 0.851 0.988 0.892 1.278 1.040 0.763 0.993 0.751 0.949 0.816 0.963 0.872 0.753 1.097 1.369 1.126 0.862 1.150 0.704 0.682 1.227 1.378 0.996 0.922 1.100 1.480 1.189 1.060 1.362 1.290
+Parameters optimization took 22 rounds (17.963 sec)
+
+Computing ML distances based on estimated model parameters... 0.189 sec
+Computing BIONJ tree...
+0.049 seconds
+Log-likelihood of BIONJ tree: -220373.701
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 3.164 second
+Computing log-likelihood of 95 initial trees ... 53.755 seconds
+Current best score: -220373.701
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+Initial log-likelihood: -220284.355
+Current log-likelihood at step 1: -220282.339
+Current log-likelihood at step 2: -220282.146
+Current log-likelihood at step 3: -220282.051
+Parameters optimization took 2 rounds (2.086 sec)
+
+BETTER TREE FOUND at iteration 1: -220282.051
+Iteration 10 / LogL: -220282.529 / Time: 0h:2m:14s
+Iteration 20 / LogL: -220282.374 / Time: 0h:3m:26s
+Finish initializing candidate tree set (1)
+Current best tree score: -220282.051 / CPU time: 184.612
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Iteration 30 / LogL: -220304.088 / Time: 0h:4m:5s (0h:10m:1s left)
+Iteration 40 / LogL: -220284.970 / Time: 0h:4m:46s (0h:7m:27s left)
+Iteration 50 / LogL: -220282.914 / Time: 0h:5m:27s (0h:5m:41s left)
+Log-likelihood cutoff on original alignment: -220343.905
+Iteration 60 / LogL: -220286.575 / Time: 0h:6m:6s (0h:4m:14s left)
+Iteration 70 / LogL: -220293.396 / Time: 0h:6m:56s (0h:3m:6s left)
+Iteration 80 / LogL: -220282.699 / Time: 0h:7m:35s (0h:2m:1s left)
+Iteration 90 / LogL: -220282.254 / Time: 0h:8m:18s (0h:1m:1s left)
+Iteration 100 / LogL: -220284.216 / Time: 0h:9m:1s (0h:0m:5s left)
+Log-likelihood cutoff on original alignment: -220343.905
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 1.000
+TREE SEARCH COMPLETED AFTER 102 ITERATIONS / Time: 0h:9m:10s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+Initial log-likelihood: -220282.051
+Current log-likelihood at step 1: -220282.008
+Current log-likelihood at step 2: -220281.982
+Current log-likelihood at step 3: -220281.963
+Current log-likelihood at step 4: -220281.948
+Current log-likelihood at step 5: -220281.937
+Current log-likelihood at step 6: -220281.927
+Partition-specific rates:  1.034 0.797 1.183 0.786 1.438 1.252 0.894 1.099 0.870 0.890 0.802 0.926 1.609 0.823 0.834 0.897 1.091 0.921 1.026 0.843 0.984 0.890 1.295 1.048 0.760 0.986 0.748 0.952 0.811 0.967 0.875 0.752 1.087 1.366 1.138 0.872 1.155 0.704 0.710 1.217 1.346 0.985 0.921 1.096 1.487 1.198 1.052 1.391 1.292
+Parameters optimization took 5 rounds (3.844 sec)
+
+BEST SCORE FOUND : -220281.927
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+9.971 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file Durian_GL_49_Concatenated_fasta.fasta.splits.nex
+Total tree length: 2.478
+
+Total number of iterations: 102
+CPU time used for tree search: 527.944 sec (0h:8m:47s)
+Wall-clock time used for tree search: 528.976 sec (0h:8m:48s)
+Total CPU time used: 563.595 sec (0h:9m:23s)
+Total wall-clock time used: 564.998 sec (0h:9m:24s)
+
+Computing bootstrap consensus tree...
+Reading input file Durian_GL_49_Concatenated_fasta.fasta.splits.nex...
+11 taxa and 23 splits.
+Consensus tree written to Durian_GL_49_Concatenated_fasta.fasta.contree
+Reading input trees file Durian_GL_49_Concatenated_fasta.fasta.contree
+Log-likelihood of consensus tree: -220281.928
+
+Analysis results written to: 
+  IQ-TREE report:                Durian_GL_49_Concatenated_fasta.fasta.iqtree
+  Maximum-likelihood tree:       Durian_GL_49_Concatenated_fasta.fasta.treefile
+  Likelihood distances:          Durian_GL_49_Concatenated_fasta.fasta.mldist
+  Best partitioning scheme:      Durian_GL_49_Concatenated_fasta.fasta.best_scheme.nex
+           in RAxML format:      Durian_GL_49_Concatenated_fasta.fasta.best_scheme
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          Durian_GL_49_Concatenated_fasta.fasta.splits.nex
+  Consensus tree:                Durian_GL_49_Concatenated_fasta.fasta.contree
+  Screen log file:               Durian_GL_49_Concatenated_fasta.fasta.log
+
+Date and Time: Sat May 25 18:11:56 2019
