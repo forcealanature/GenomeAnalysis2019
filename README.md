@@ -1,5 +1,6 @@
 # GenomeAnalysis2019
 Contact: Ylva.Jondelius.6310@student.uu.se
+
 Welcome to my repository for the project in the course Genome Analysis spring 2019 at Uppsala University. 
 I worked with scaffold 6 from paper V, assembling a part of the Durian fruit. 
 
