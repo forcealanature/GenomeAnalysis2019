@@ -1,4 +1,5 @@
 # GenomeAnalysis2019
+Contact: Ylva.Jondelius.6310@student.uu.se
 Welcome to my repository for the project in the course Genome Analysis spring 2019 at Uppsala University. 
 I worked with scaffold 6 from paper V, assembling a part of the Durian fruit. 
 
@@ -13,6 +14,7 @@ backup_data - data generated from analysis that I wanted saved, such as my genom
 results - the output files from some final analysis, such as images etc. 
 
 For more and most details see my wiki. 
+
 
 
 
