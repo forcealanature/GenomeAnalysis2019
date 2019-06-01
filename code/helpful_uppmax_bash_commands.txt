@@ -1,0 +1,62 @@
+#####Please disregard this file as it was uploaded after deadline, its only for my own future benefit!############ 
+
+###UPPMAX special commands 
+
+# Setting up softlinks
+ln -s /path/to/data/ name_you_want_your_softlink_to-have #NOTE: If you are in the place you want the softlink, otherwise i assume you need a path. 
+
+#To run code
+sbatch code_xx.sh
+
+#Checks memory availability in your home and project folders on uppmax. 
+uquota
+
+#Checks number of objects currently on and allowed in your home and project folders on uppmax.
+uquota -f
+
+#See a list of all directories and their size, a batch command. 
+du -sh -- *
+
+#List of jobs qued and running on your account. 
+jobinfo -u <my_username>
+
+#Status of current specific job, insert the slurm-ID number as IDnumber (only the numbers). 
+jobstats -p -r IDnumber
+
+#Cancel a job, or all jobs I think. 
+scancel
+
+#Cancel a job more specific way.
+scancel -i -u your_account_name
+
+#Download files from uppmax to local. 
+rsync -ah account@rackham.uppmax.uu.se:/path/to/folder/on/uppmax /path/to/local/folder/file
+
+#Download everything in a folder on uppmax to local.
+rsync -ah account@rackham.uppmax.uu.se:/path/to/folder/on/uppmax/* /path/to/local/folder/file
+
+#Upload local files to directory on uppmax
+rsync -ah /path/to/local/folder/file account@rackham.uppmax.uu.se:/path/to/folder/on/uppmax/
+
+
+###Bash commands
+
+#Check file size and have it reported in megabytes, to get for example gigabytes change the M to G.
+ls -l --block-size=M
+
+#Search for some specific "text" in all files or specifyied file. 
+grep -iRL ”text” ./      #or add directory after the / and remove the .  
+
+#Remove files or directories.
+rm -r
+
+#Copy files.
+cp /path/to/file /path/new/file/can_have_different_name
+
+#Move i.e rename files.
+mv /path/to/file /path/new/file/can_have_different_name
+
+###Software commands
+
+#Conversion of gff files, using module cufflinks. Also works the opposite way.  
+gffread file.gff -T -o file.gff3
