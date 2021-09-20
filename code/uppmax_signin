@@ -1,0 +1,44 @@
+LINKS
+If issues with uppmax check: https://status.uppmax.uu.se
+This is the official starting guide in how to get an account etc.: https://uppmax.uu.se/support/getting-started/
+They hold an intro course to UPPMAX a few times a year, all material is also available online at: https://uppmax.uu.se/support/courses-and-workshops/introductory-course-winter-2020/
+This is the link to all user guides: https://uppmax.uu.se/support/user-guides/
+You will most likely only/mostly need: https://uppmax.uu.se/support/user-guides/rackham-user-guide/ as rackham is the cluster we are on. 
+And: https://uppmax.uu.se/support/user-guides/slurm-user-guide/ because slurm is the system used to submit any large jobs and how we actually do stuff. 
+
+############################################################################################
+
+ACTUALLY DOING STUFF IN SHORT (once you have the account): 
+To sign in: 
+Open terminal type: 
+ssh -AX username@rackham.uppmax.uu.se
+password
+#preferably use -ax flag, there are a number of flags that work. 
+
+#To move from your home to the acoel projects cd to them straight, their paths are: 
+Working project: /proj/snic2020-15-191
+Storage project: /proj/snic2020-16-132
+
+#I recommend setting up a your bash profile in your home, although with caution to not delete anything,
+#to have certain flags and like paths added with shortcuts so you dont have to type the full path all the time
+#although I am too lazy to have done that myself. To do this ill ad the info but its in your bin/bash home directoy. 
+
+######################################################################################################
+
+INSTALLATION OF SOFTWARES: 
+#You can install your own stuff
+#But before installing check if thing is available on uppmax at:https://uppmax.uu.se/resources/software/installed-software/
+#I recommend doing this in the working project bin, making it accessable to all collaborators on the project if they run
+PATH="$PATH:/proj/snic2020-15-191/bin" (Or whatever the path to the bin is with "")
+#it makes the bin your path, like I talked about the bash profile above and uppmax will find the stuff in the bin as something already installed. 
+
+######################################################################################################
+
+RULES AND RECOMMENDATIONS: 
+#Do not run heavy jobs on the login node. Everyone will hate you.
+#SLURM works like a que, if your project still has hours for the month (last 30 days) you have priority, otherwise you are bottom of the food chain based
+#on cores requested and runtime. Do not ask for too much more than needed if your project is/almost is out. 
+#all hours you do not use goes back to the project after the run terminates. 
+#You can ssh into specific nodes that are free and put your run on them - so called interactive jobs - to avoid a long SLURM que
+#Split big jobs in smaller if possible, make one script that submitts the rest as new jobs with lower requirments making them skip the que.
+#for doing any bioinfo work you need to load a special model, bioinfo-tools using command module load. More about this in the helpful command document.
